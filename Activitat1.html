@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Exercici 1</title>
+</head>
+
+<body marginwidth="200">
+    <header>
+        <h1>1r Curs DAW</h1>
+    </header>
+    <section>
+        <h2>Asignatures</h2>
+        <nav>
+            <ul>
+                <li>M01 - Implantació de sistemes operatius</li>
+                <li>M02. Base de dades</li>
+                <li>M03 - Programació</li>
+                <li>M04 - Llenguatges de marques</li>
+                <li>M05 - Entorns de desenvolupament</li>
+                <li>M10 - Formació i orientació laboral</li>
+                <li>M11 - Empresa i iniciativa emprenedora</li>
+            </ul>
+        </nav>
+        <table border="1">
+            <tr>
+                <th>Hora</th>
+                <th>Dilluns</th>
+                <th>Dimarts</th>
+                <th>Dimercres</th>
+                <th>Dijous</th>
+                <th>Divenders</th>
+            </tr>
+            <tr>
+                <th>8:30<br>9:30</th>
+                <td colspan="3"> </td>
+                <td rowspan="2">Sistemes</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>9:30<br>10:30</th>
+                <td rowspan="2">Entorns</td>
+                <td rowspan="2">Programació</td>
+                <td rowspan="2">Programació</td>
+                <td rowspan="2">Sistemes</td>
+            </tr>
+            <tr>
+                <th>10:30<br>11:30</th>
+                <td>Tutoria</td>
+            </tr>
+            <tr>
+                <th rowspan="2">11:30<br>12:30</th>
+                <td rowspan="2">Ll.marques</td>
+                <td>descans</td>
+                <td rowspan="2">Gestió BD</td>
+                <td>descans</td>
+                <td rowspan="2">sistemes</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Programació</td>
+                <td rowspan="2">Gestió BD</td>
+            </tr>
+            <tr>
+                <th>12:30<br>13:00</th>
+                <td>descans</td>
+                <td>descans</td>
+                <td>descans</td>
+            </tr>
+            <tr>
+                <th>13:00<br>14:00</th>
+                <td>Ll.marques</td>
+                <td>Gestió BD</td>
+                <td>Gestió BD</td>
+                <td>Gestió BD</td>
+                <td rowspan="2">Programació</td>
+            </tr>
+            <tr>
+                <th>14:00<br>15:00</th>
+                <td rowspan="2">FOL</td>
+                <td rowspan="2"></td>
+                <td rowspan="2">EIE</td>
+                <td rowspan="2"></td>
+            </tr>
+            <tr>
+                <th>15:00<br>16:00</th>
+                <td></td>
+            </tr>
+        </table>
+    </section>
+    <br>
+    <footer>
+        <h1>Blanes Developers Conference 2021</h1>
+        <br>
+        <form>
+            <fieldset>
+                <legend>Formulari</legend>
+                <p>Nom*</p> <input type="text" placeholder="Nom" required>
+                <p>Cognoms*</p> <input type="text" placeholder="1r Cognom" required>
+                <input type="text" placeholder="2n Cognom" required>
+                <p>NIF*</p>
+                <input type="text" name="dni" placeholder="Introdueix el seu DNI" pattern="[0-9]{8}[A-Za-z]{1}"
+                    title="Debe poner 8 números y una letra" required />
+                <p>Data Neixement</p>
+                <input type="date">
+                <p>Fotografia Personal</p>
+                <p><input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg"></p>
+                <p>Sexe:</p>
+                <label>Home</label>
+                <input type="radio" name="sexe" value="Home">
+                <label>Dona</label>
+                <input type="radio" name="sexe" value="Dona">
+                <label>Altres</label>
+                <input type="radio" name="sexe" value="Altres">
+                <p>Telefon <input type="tel" name="telefon" pattern="[0-9]{9}" title="Debe poner 9 números" required>
+                </p>
+                <p>Correu: <input type="email" name="correu" required></p>
+                <p>Domina:</p>
+                <label>JavaScript</label><input type="checkbox" value="JavaScript">
+                <label>Python</label><input type="checkbox" value="Python">
+                <label>Java</label><input type="checkbox" value="Java">
+                <label>C#</label><input type="checkbox" value="C#">
+                <label>PHP</label><input type="checkbox" value="PHP">
+                <p></p>
+                <table border="1">
+                    <h2>Franjes horàries</h2>
+                    <tr>
+                        <th>Horari</th>
+                        <th>Xarrades Disponibles</th>
+                    </tr>
+                    <tr>
+                        <th>9:00<br>10:00</th>
+                        <td><select name="Xarrades">
+                            <option value="sense elecció"></option>
+                            <option value="JavaScript">Programació amb JavaScript</option>
+                            <option value="Python">Programació amb Python</option>
+                            <option value="Java">Programació amb Java</option>
+                            <option value="C#">Programació amb C#</option>
+                            <option value="PHP">Programació amb PHP</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <th>10:00<br>11:00</th>
+                        <td><select name="Xarrades">
+                            <option value="sense elecció"></option>
+                            <option value="JavaScript">Programació amb JavaScript</option>
+                            <option value="Python">Programació amb Python</option>
+                            <option value="Java">Programació amb Java</option>
+                            <option value="C#">Programació amb C#</option>
+                            <option value="PHP">Programació amb PHP</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <th>11:00<br>12:00</th>
+                        <td><select name="Xarrades">
+                            <option value="sense elecció"></option>
+                            <option value="JavaScript">Programació amb JavaScript</option>
+                            <option value="Python">Programació amb Python</option>
+                            <option value="Java">Programació amb Java</option>
+                            <option value="C#">Programació amb C#</option>
+                            <option value="PHP">Programació amb PHP</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <th>12:00<br>13:00</th>
+                        <td><select name="Xarrades">
+                            <option value="sense elecció"></option>
+                            <option value="JavaScript">Programació amb JavaScript</option>
+                            <option value="Python">Programació amb Python</option>
+                            <option value="Java">Programació amb Java</option>
+                            <option value="C#">Programació amb C#</option>
+                            <option value="PHP">Programació amb PHP</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <th>13:00<br>14:00</th>
+                        <td><select name="Xarrades">
+                            <option value="sense elecció"></option>
+                            <option value="JavaScript">Programació amb JavaScript</option>
+                            <option value="Python">Programació amb Python</option>
+                            <option value="Java">Programació amb Java</option>
+                            <option value="C#">Programació amb C#</option>
+                            <option value="PHP">Programació amb PHP</option>
+                        </select></td>
+                    </tr>
+                </table>
+                <p></p>
+                <input type="image" src="SUBMIT.png" alt="Submit feedback">
+                
+                
+            </fieldset>
+        </form>
+    </footer>
+</body>
+
+
+</html>
